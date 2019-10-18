@@ -2,7 +2,7 @@ name: flutter_plugin05
 description: A new Flutter plugin.
 version: 0.0.1
 author: Halen <jiang293172@163.com>
-homepage:
+homepage: https://github.com/JIANG293172/flutter_plugin05.git
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
