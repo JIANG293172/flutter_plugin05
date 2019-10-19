@@ -4,7 +4,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da1e22e-0099-45fc-a739-954b705e0863" name="Default Changelist" comment="" />
+    <list default="true" id="2da1e22e-0099-45fc-a739-954b705e0863" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.pub/" />
@@ -26,17 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_plugin05.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="180">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="-30">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -45,10 +48,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flutter_plugin05.podspec">
+        <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterPlugin05Plugin.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterPlugin05Plugin.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="60">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterPlugin05Plugin.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -83,7 +100,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="167" />
+    <option name="x" value="109" />
     <option name="y" value="23" />
     <option name="width" value="1096" />
     <option name="height" value="777" />
@@ -116,13 +133,19 @@
             <path>
               <item name="flutter_plugin05" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_plugin05" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="ios" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flutter_plugin05" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_plugin05" type="462c0819:PsiDirectoryNode" />
               <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="Classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_plugin05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_plugin05" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="Flutter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flutter_plugin05" type="b2602c69:ProjectViewProjectNode" />
@@ -172,11 +195,20 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="167" y="23" width="1096" height="777" extended-state="0" />
+    <frame x="109" y="23" width="1096" height="777" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.91653293" visible="true" weight="0.31783682" />
-      <window_info id="Captures" order="1" sideWeight="0.083467096" side_tool="true" visible="true" weight="0.31783682" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.91755724" visible="true" weight="0.31783682" />
+      <window_info id="Captures" order="1" sideWeight="0.082442746" side_tool="true" weight="0.31783682" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -186,15 +218,15 @@
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.11240876" />
-      <window_info anchor="bottom" id="Run" order="1" visible="true" weight="0.09051095" />
-      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" sideWeight="0.58728653" visible="true" weight="0.57226276" />
+      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49810246" weight="0.329927" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" order="4" weight="0.32953367" />
+      <window_info anchor="bottom" id="Logcat" order="4" sideWeight="0.49810246" weight="0.32846716" />
       <window_info anchor="bottom" id="Debug" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.04379562" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49905124" weight="0.04379562" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.41271347" side_tool="true" weight="0.04379562" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32953367" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32846716" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -203,8 +235,8 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.272578" />
-      <window_info id="Captures" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.91755724" visible="true" weight="0.31783682" />
+      <window_info id="Captures" order="1" sideWeight="0.082442746" side_tool="true" visible="true" weight="0.31783682" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -212,16 +244,17 @@
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.11240876" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.04379562" />
-      <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Find" order="0" />
+      <window_info anchor="bottom" id="Dart Analysis" order="1" weight="0.11240876" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58728653" visible="true" weight="0.04379562" />
+      <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.49810246" weight="0.329927" />
+      <window_info anchor="bottom" id="Android Profiler" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Logcat" order="5" sideWeight="0.49810246" weight="0.32846716" />
+      <window_info anchor="bottom" id="Debug" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49905124" weight="0.04379562" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.41271347" side_tool="true" visible="true" weight="0.04379562" />
+      <window_info anchor="bottom" id="Flutter Performance" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32846716" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -317,23 +350,6 @@
     <entry file="file://$PROJECT_DIR$/ios/flutter_plugin05.podspec">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterPlugin05Plugin.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterPlugin05Plugin.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterPlugin05Plugin.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ios/ServiceDefinitions.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -356,9 +372,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/flutter_plugin05.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.packages">
@@ -404,27 +417,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/tao/com/example/flutter_plugin05/FlutterPlugin05Plugin.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/flutter_plugin05.podspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_plugin05.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="285">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="-30">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/flutter_plugin05.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterPlugin05Plugin.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterPlugin05Plugin.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterPlugin05Plugin.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
