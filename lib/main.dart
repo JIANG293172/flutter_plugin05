@@ -1,161 +1,70 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
+
+import 'package:flutter/services.dart';
+import 'package:flutter_plugin05/flutter_plugin05.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class MyApp extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  String _platformVersion = 'Unknown';
+  String _testStringMake = "unInit";
+
+  @override
+  void initState() {
+    super.initState();
+    initPlatformState();
   }
-}
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  // Platform messages are asynchronous, so we initialize in an async method.
+  Future<void> initPlatformState() async {
+    String platformVersion;
+    String testStringMake;
+    // Platform messages may fail, so we use a try/catch PlatformException.
+    try {
+      platformVersion = await FlutterPlugin05.platformVersion;
+      testStringMake = await FlutterPlugin05.testString;
+    } on PlatformException {
+      platformVersion = 'Failed to get platform version.';
+    }
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
+    // If the widget was removed from the tree while the asynchronous platform
+    // message was in flight, we want to discard the reply rather than calling
+    // setState to update our non-existent appearance.
+    if (!mounted) return;
 
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
+      _platformVersion = platformVersion;
+      _testStringMake = testStringMake;
     });
   }
 
-  Future<void> _neverStisfield() async {
-    return showDialog<void>(
-      context: context,
-      barrierDismissible: false,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Rewind and remember'),
-          content: SingleChildScrollView(
-            child: ListBody(
-              children: <Widget>[
-                Text('You will never be statisfied'),
-                Text('You like me i never statisfied'),
-              ],
-            ),
-          ),
-
-          actions: <Widget>[
-            FlatButton(
-              child: Text('Regret'),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  int _count = 0;
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('taotaotao'),
-        actions: <Widget>[
-          IconButton(
-            icon: const Icon(Icons.add_alert),
-            tooltip: 'show tip',
-            onPressed: () {
-              _neverStisfield();
-            },
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Plugin example app'),
+        ),
+        body: Center(
+          child: Column(
+            children: <Widget>[
+
+              Center(
+                child: Text('Running on: taotaotaotaotaotaotaotaotao  $_platformVersion\n'),
+              ),
+              Center(
+                child: Text('make Test on taotaotaotao $_testStringMake\n'),
+              ),
+            ],
           ),
-        ],
+        ),
       ),
-      body: null,
     );
   }
-
 }
-
-
-//Scaffold(
-//appBar: AppBar(
-//title: const Text('Sample Code'),
-//),
-//body: Center(
-//child: Text('You have pressed the button $_count times'),
-//),
-//bottomNavigationBar: BottomAppBar(
-//shape: const CircularNotchedRectangle(),
-//child: Container(height: 50.0,),
-//),
-//backgroundColor: Colors.blueGrey.shade200,
-//floatingActionButton: FloatingActionButton(
-//onPressed: () => setState(() => _count++),
-//tooltip: 'Increment Counter',
-//child: const Icon(Icons.add),
-//),
-//floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-//);
-//}
-
-//Future<void> _neverStisfield() async {
-//  return showDialog<void>(
-//    context: context,
-//    barrierDismissible: false,
-//    builder: (BuildContext context) {
-//      return AlertDialog(
-//        title: Text('Rewind and remember'),
-//        content: SingleChildScrollView(
-//          child: ListBody(
-//            children: <Widget>[
-//              Text('You will never be statisfied'),
-//              Text('You like me i never statisfied'),
-//            ],
-//          ),
-//        ),
-//
-//        actions: <Widget>[
-//          FlatButton(
-//            child: Text('Regret'),
-//            onPressed: () {
-//              Navigator.of(context).pop();
-//            },
-//          ),
-//        ],
-//      );
-//    },
-//  );
-//}
